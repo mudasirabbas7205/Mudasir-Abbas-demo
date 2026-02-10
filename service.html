@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System - Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2b2d42;
+            color: #edf2f4;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #2b2d42;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #8d99ae;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2b2d42;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #edf2f4;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #edf2f4;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .nav-icon:hover {
+            background-color: #8d99ae;
+            transform: translateY(-2px);
+        }
+
+        .nav-icon.active {
+            background-color: #8d99ae;
+        }
+
+        .nav-icon i {
+            font-size: 24px;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-icon span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .services-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #8d99ae;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background-color: #8d99ae;
+            padding: 2.5rem;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .service-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #2b2d42;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #8d99ae;
+        }
+
+        .service-title {
+            color: #2b2d42;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .service-description {
+            color: #2b2d42;
+            line-height: 1.8;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .service-features li {
+            color: #2b2d42;
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2b2d42;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-icons {
+                gap: 1rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">H</div>
+                <div class="logo-text">Hostel Management</div>
+            </div>
+            <div class="nav-icons">
+                <a href="home.html" class="nav-icon">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="service.html" class="nav-icon active">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Services</span>
+                </a>
+                <a href="contact.html" class="nav-icon">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="services-section">
+        <h1 class="page-title">Our Services</h1>
+        <p class="page-subtitle">Comprehensive hostel management services for a comfortable living experience</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h2 class="service-title">Room Management</h2>
+                </div>
+                <p class="service-description">
+                    Efficient room allocation and management system ensuring optimal space utilization and resident satisfaction.
+                </p>
+                <ul class="service-features">
+                    <li>Automated room allocation</li>
+                    <li>Room maintenance tracking</li>
+                    <li>Occupancy management</li>
+                    <li>Room change requests</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h2 class="service-title">Resident Management</h2>
+                </div>
+                <p class="service-description">
+                    Complete resident profile management with personal information, emergency contacts, and preferences.
+                </p>
+                <ul class="service-features">
+                    <li>Resident registration</li>
+                    <li>Profile management</li>
+                    <li>Check-in/Check-out</li>
+                    <li>Document management</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h2 class="service-title">Payment Management</h2>
+                </div>
+                <p class="service-description">
+                    Streamlined payment processing with multiple payment options and automated billing system.
+                </p>
+                <ul class="service-features">
+                    <li>Online payment gateway</li>
+                    <li>Automated billing</li>
+                    <li>Payment history</li>
+                    <li>Receipt generation</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h2 class="service-title">Maintenance Services</h2>
+                </div>
+                <p class="service-description">
+                    Quick and efficient maintenance request system for all hostel facilities and infrastructure.
+                </p>
+                <ul class="service-features">
+                    <li>Maintenance request tracking</li>
+                    <li>Priority-based scheduling</li>
+                    <li>Vendor management</li>
+                    <li>Service history</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h2 class="service-title">Event Management</h2>
+                </div>
+                <p class="service-description">
+                    Organize and manage hostel events, activities, and community gatherings for residents.
+                </p>
+                <ul class="service-features">
+                    <li>Event scheduling</li>
+                    <li>Resident participation</li>
+                    <li>Resource booking</li>
+                    <li>Event notifications</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h2 class="service-title">Complaint Management</h2>
+                </div>
+                <p class="service-description">
+                    Systematic complaint handling and resolution system to address resident concerns promptly.
+                </p>
+                <ul class="service-features">
+                    <li>Complaint submission</li>
+                    <li>Status tracking</li>
+                    <li>Priority assignment</li>
+                    <li>Resolution feedback</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
