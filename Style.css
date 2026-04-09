@@ -1,629 +1,407 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
-
-
 .header {
-  display: flex;
-  /* background-color: #0F172A; */
-  /* background: linear-gradient(135deg, #1E1B4B, #2563EB, #06B6D4); */
-  background-color: #fff;
-  justify-content: space-between;
-  width: 100%;
-  height: 50px;
-  color: #000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    color: rgb(39, 32, 32);
 }
-
-.logo {
-
-  margin: 20px 0 0 20px;
-  cursor: pointer;
-  transition: .5s;
+.logo span {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
 }
-
-.logo:hover {
-  /* box-shadow: 5px 5px 8px gray; */
-  transform: scale(1.1);
-  transition: .5s;
-  color: #070606;
+.logo span i {
+    width: 60px;
+    height: 60px;
+    color: seagreen;
+    padding: 20px 0 0 40px;
+    
 }
-
 .navbar ul {
-  display: flex;
-  margin: 20px 0 0 20px;
+    display: flex;
+    
 }
-
-.navbar ul .nav-links {
-  text-decoration: none;
-  margin: 8px;
-  list-style: none;
-  font-weight: 500;
-  color: black;
+.navbar ul .nav-links{
+    list-style: none;
+    padding: 14px; 
 }
-  ul a  {
-  text-decoration: none;
-  cursor: pointer;
-  
+.navbar ul .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 530;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    transition: 0.7s;
 }
-ul a:hover {
-  transform: scale(1.1);
-  transition: .5s;
-  color: #000;
-  text-decoration: underline;
-  transform: ease-in;
+.navbar ul .nav-links a:hover {
+    text-decoration: underline;
+    font-weight: 540;
 }
-.btn {
-  margin: 14px 10px 6px 10px;
-  background-color: #E5E7EB;
-  border-radius: 14px;
-  padding: 10px 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: black;
-  border: none;
-  font-weight: 600;
+.btn1 button {
+    padding: 6px;
+    border-radius: 16px;
+    background-color: white;
+    border: 2px solid rgb(203, 186, 186);
+   margin-top: 13px;
+   margin-left: 50px;
 }
-
-.btn:hover {
-  /* box-shadow: 5px 5px 8px rgb(203, 190, 190); */
-  transform: scale(1);
-  transition: .5s;
-  cursor: pointer;
-  background-color: #bcb8f0;
-  color: #fff;
-  scale: 1.1;
+.btn1 button:hover {
+    transition: 0.7s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.btn2 button {
+    padding: 6px;
+    border-radius: 16px;
+    background-color: seagreen;
+    border: 2px solid rgb(180, 169, 169);
+    margin-top: 13px;
+    color: white;
+    margin-right: 60px;
+    gap: 0;
+}
+.btn2 button:hover {
+    transition: 0.7s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.hero-section {
+    background-image: url('Assests/bg-1.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 95vh;
+    
+}
+.hero-text {
+    display: flex;
+    justify-content: space-around;
+}
+.hero-text div h1 {
+  font-size: 45px;
+  font-weight: 900;
+  margin: 100px 0 20px 30px;
+  color: rgb(122, 118, 118);
+}
+.hero-text div p {
+    margin: 0 0 10px 30px;
+    font-size: 16px;
+    color: rgb(52, 48, 48);
+}
+.hero-text div button {
+    margin: 0 0 10px 30px;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    color: rgb(58, 55, 55);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.hero-text div button:hover{
+    background: black;
+    color: white;
+}
+.hero-section div img {
+    width: 400px;
+    height: 320px;
+    border-radius: 20px;
+    margin: 100px 0 0 150px ;
+}
+.card {
+    background-color: white;
+    display: flex;
+    padding-bottom: 50px;
+    margin: 50px 0 50px 50px;
+    border-radius: 20px;
+}
+.card div h4 {
+    font-size: 30px;
+    margin-left: 25px;
+}
+.img-part {
+    display: flex;
+    flex-direction: column;
+}
+.quality {
+    display: flex;
+    margin: 80px 0 80px 0;
+    justify-content: space-evenly;
+}
+.quality h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 10px 20px 10px 30px;
+}
+.quality h2 span {
+    color: rgb(191, 184, 184);
+}
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+.logos div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(190, 183, 183);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(230, 227, 227);
+    transition: 0.7s;
+    cursor: pointer;
+}
+.logos div img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+.logos div:hover {
+   background-color: white;
 }
 .container {
-  background: 
-  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url("Assets/bg-img.avif");
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  color: #fff;
-  font-weight: 700;
-  font-size: 34px;
+   justify-content: center; 
+   text-align: center;
+   align-items: center;
+   background-color: whitesmoke;
 }
-.hero h1 {
-  padding: 100px 0 40px 30px;
+.container h2 {
+   font-size: 26px;
+   font-weight: 400;
+   margin: 40px 0 40px 0;
 }
-.hero p {
-  font-size: 18px;
-  margin-left: 30px;
-  font-weight: 200;
+.container h2 span {
+    color: rgb(191, 184, 184);
 }
-.hero span button {
-  background-color: white;
-  margin: 30px 0 30px 30px;
-  padding: 8px;
-  border-radius: 16px;
-  border: none;
+.container-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-content: center;
+    margin: 100px 0 100px 0;
 }
-.hero span button:hover {
-  background-color: black;
-  transition: 0.5s;
-  cursor: pointer;
-  color: white;
+.container-cards .cards {
+    width: 350px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
 }
-.hero span i {
-  color: white;
-  margin: 0 0 -16px 0;
-  font-size: 18px;
+.container-cards .cards:hover {
+    transition: 0.7s;
+    background-color: rgb(220, 216, 216);
+    cursor: pointer;
 }
-.smart-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  background-color: #dad7cd;
+.container-cards .cards img {
+    width: 20px;
+    height: 20px;
 }
-  
-.div1 {
-  background-image: url("Assets/smart-habit.avif");
-  width: 300px;
-  height: 350px;
-  border-radius: 20px;
-  margin: 10px;
+.services {
+    display: flex;
+    justify-content: space-evenly;
 }
-.div1 .card {
-  background-color: transparent;
-  color: rgb(148, 140, 140);
-  width: 210px;
-  height: 110px;
+.service-heading h2 {
+    font-size: 26px;
+    font-weight: 400px;
+    margin: 30px 0 30px 0;
 }
-.div1 .card p:hover {
-  cursor: pointer;
-  transition: 0.7s;
-  background-color: #494585;
+.service-heading h2 span {
+    color: rgb(191, 184, 184);
 }
-.card i {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: black;
-  padding: 10px;
-  margin-left: 50px;
+.service-heading button {
+    padding: 8px;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    background-color: rgb(15, 117, 15);
 }
-.card p {
-  margin: 100px 0 10px 50px;
-  background-color: #1E1B4B;
-  border-radius: 12px;
+.service-heading button:hover{
+    background-color: whitesmoke;
+    transition: 0.7s;
+    cursor: pointer;
+    color: black;
 }
-
-.div2 {
-  background-image: url("Assets/connected.avif");
-  width: 190px;
-  height: 190px;
-  border-radius: 12px;
-  
+.service-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 0 50px 0;
 }
-
-.div3 {
-  width: 190px;
-  height: 190px;
-  border-radius: 12px;
-  background-color: #ccff33;
+.service-cards .detail-card {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 2px solid rgb(230, 224, 224);
 }
-.text {
-  margin-top: 80px;
+.detail-card h5 {
+    margin: 8px;
+    color: rgb(191, 184, 184);
 }
-.text i {
-  margin: 10px;
+.detail-card h4{
+    margin: 6px;
 }
-
-.div4 {
-  background-image: url("Assets/blur\ image.webp");
-  width: 200px;
-  height: 400px;
-  border-radius: 16px;
-  background-repeat: no-repeat;
+.detail-card a {
+    margin: 6px;
+    color: black;
 }
-.container2 {
-  justify-content: center;
-  align-items: center;
-  background-color: #dad7cd;
-  text-align: center;
-  padding-top: 100px;
+.service-img img {
+    margin: 80px 0 0 0;
+    border-radius: 20px;
 }
-.container2 h2 {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
+.medtronic {
+   justify-content: center;
+    align-items: center;
 }
-.container2 p {
-  font-size: 18px;
-  margin-bottom: 10px;
+.medtronic h2 {
+    font-size: 26px;
+    font-weight: 400px;
+    margin: 30px 0 30px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.div2 button {
-  padding: 8px;
-  color: #fff;
-  border-radius: 16px;
-  border: 1px solid white;
-  background: transparent;
-  margin: 120px 0 0 0;
-  transition: 0.7s;
-  cursor: pointer;
+.medtronic h2 span {
+   color: rgb(191, 184, 184); 
 }
-.div2 button:hover {
-  background-color: #bcb8f0;
-}
-.div4 h2 {
-  margin-top: 100px;
-  color: #fff;
-  font-size: 33px;
-  font-weight: 700;
-}
-.div4 p {
-  color: white;
-  margin-top: 100px;
-}
-.blog {
-  justify-content: space-evenly;
-  align-items: center;
-  display: flex;
-}
-.blog-left {
-  margin: 50px;
-}
-.blog-left img {
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
-}
-.blog-right {
-  margin: 50px;
-}
-.blog-right p {
-  font-size: 27px;
-  font-weight: 600;
-}
-.testimonials {
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-.card-icon {
-  width: 150px;
-  height: 150px;
-  background-color: #eaf6f3;
-  border-radius: 14px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.medtronic-card {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(216, 212, 212);
+    width: 750px;
+    height: 250px;
+    margin-left: 250px;
+    border-radius: 20px;
 
 }
-.card-icon img {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  background-color: #ccff33;
-  border-radius: 50px;
-  margin-top: 50px;
+.medtronic-blog h4 {
+    margin: 10px 10px 50px 10px;
+    font-weight: 500;
 }
-.card-view {
-  width: 150px;
-  height: 150px;
-  background-color: #fff;
-  border-radius: 14px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.medtronic-blog p {
+    font-size: 13px;
+    margin: 10px;
 }
-.card-view h4 {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 12px 0 10px 0;
+.medtronic-blog button {
+    padding: 6px;
+    border-radius: 16px;
+    border: none;
+    color: white;
+    background-color: rgb(15, 117, 15);
 }
-.smart-devices {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0 0 0;
-  background-color: #dad7cd;
-  padding: 80px 0 80px 0;
+.medtronic-blog button:hover {
+    background-color: whitesmoke;
+    transition: 0.7s;
+    cursor: pointer;
+    color: black;
 }
-.smart-devices h2 {
-  font-size: 30px;
-  font-weight: 700px;
+.medtronic-blog h5 {
+    font-weight: 500;
+    margin: 10px;
 }
-.card-container{
-  display:grid;
-  grid-auto-flow:column;
-  grid-auto-columns:calc(33.33% - 20px);
-  gap:20px;
-  overflow-x:auto;
-  scroll-snap-type:x mandatory;
-  scroll-padding:20px;
-  margin-bottom: 60px;
-  background-color: #dad7cd;
+.medtronic-blog h5 span {
+    color: rgb(191, 184, 184);
+
 }
-.card-container::-webkit-scrollbar{
-  display:none;
-}
-.card-scroll{
-  height:320px;
-  width: 320px;
-  margin: 20px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:22px;
-  font-weight:bold;
-  scroll-snap-align:start;
-  background-color: #fff;
-}
-.card-scroll img {
-  height: 260px;
-  width: 320px;
-}
-.feedback {
-  display: flex;
-  justify-content: space-evenly;
-}
-.text-part h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin: 30px 20px 10px 50px;
-}
-.text-part p {
-  margin: 10px 20px 40px 50px;
-}
-.text-part button {
-  margin: 40px 20px 20px 50px;
-  padding: 10px;
-  background-color: #e3e0e0;
-  border: none;
-  border-radius: 16px;
-}
-.text-part button:hover {
-  transition: 0.7s;
-  cursor: pointer;
-  background-color: black;
-  color: #fff;
-}
-.feedback-part h4 {
-  margin: 30px 20px 10px 30px;
-  font-size: 30px;
-  font-weight: 600;
-}
-.feedback {
-  margin: 40px 0 20px 0;
-}
-.feedback-part p {
-  margin: 0 40px 10px 50px;
-}
-.comment img {
-  width: 150px;
-  height: 150px;
-  border-radius: 12px;
-  margin: 30px 0 10px 30px;
-}
-.comment {
-  display: flex;
-}
-.comment  h5 {
-  margin: 150px 0 0 10px;
-  font-size: 20px;
-}
-.comment  p {
-  margin: 150px 0 0 12px;
-  font-size: 14px;
-}
-.comment span button {
-  margin: 150px 0 0 14px;
-  padding: 8px;
-  border-radius: 16px;
-  border: 1px solid rgb(160, 147, 147);
-  background: transparent;
-}
-.comment span button:hover{
-  background-color: black;
-  transition: 0.6s;
-  cursor: pointer;
-  color: white;
-}
-.get-start {
-  display: flex;
-  justify-content: space-around;
-  margin: 100px 0 0 0;
-  background-color: #dad7cd;
-  padding: 100px 0 100px 0;
-}
-.img {
-  background-color: #ccff33;
-  width: 400px;
-  height: 300px;
-  border-radius: 20px;
-}
-.img img {
-  width: 400px;
-  height: 300px;
-  padding: 20px;
- 
-}
-.heading {
-   margin: 50px 0 50px 0;
-}
-.heading h2 {
-  font-size: 35px;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-.btn-click button {
-  padding: 8px;
-  border: 1px solid rgb(199, 197, 194);
-  border-radius: 16px;
-  background-color: white;
-}
-.btn-click button:hover {
-  background-color: black;
-  cursor: pointer;
-  transition: 0.6s;
-  color: #fff;
-}
-.btn-click i {
-  margin-left: 130px;
-  border-radius: 20px;
+.medtronic-img img {
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+    margin-top: 10px;
 }
 .footer {
-  /* background: linear-gradient(135deg, #0c0a25, #16409b, #09788b); */
-  background-color: black;
-  color: #fff;
-  display: flex;
-  justify-content: space-evenly;
-  height: 50vh;
+    background-color: black;
+    color: white;
 }
-.footer .logo-link h3 {
-  margin: 20px 0 20px 0;
-  font-size: 30px;
-  font-weight: 400;
+.footer-text {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0 0 0;
 }
-.footer .logo-link h3 span {
-  font-size: 30px;
-  font-weight: 800;
+.left-part h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 30px 0 30px 0;
 }
-.footer .company h4 {
-  margin: 20px 0 20px 0;
+.left-part h2 span{
+    color: rgb(172, 168, 168); 
 }
-.footer .company p {
-  margin: 8px 0 8px 0;
+.left-part span {
+    display: flex;
+    margin: 20px 0 20px 0;
 }
-.terms {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  background-color: #000;
-  color: #fff;
-  height: 50px;
-  padding: 0 50px 0 50px;
+.left-part span i {
+    color:seagreen;
 }
-@media (max-width:1024px){
-
-  .header{
-    flex-direction:column;
-    height:auto;
-    align-items:center;
-  }
-  
-  .navbar ul{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-  
-  .hero h1{
-    font-size:28px;
-  }
-  
-  .smart-cards{
-    flex-wrap:wrap;
-  }
-  
-  .blog{
-    flex-direction:column;
-    text-align:center;
-  }
-  
-  .testimonials{
-    flex-wrap:wrap;
-    gap:20px;
-  }
-  
-  .smart-devices{
-    flex-direction:column;
-    text-align:center;
-    gap:20px;
-  }
-  
-  .feedback{
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-  }
-  
-  .get-start{
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-  }
-  
-  .footer{
-    flex-wrap:wrap;
-    height:auto;
-    padding:40px 20px;
-    gap:30px;
-  }
-  
-  }
-  @media (max-width:768px){
-
-    .hero h1{
-      font-size:24px;
-      padding:60px 20px 20px 20px;
-    }
+.right-part p {
+    margin: 30px 0 30px 0;
+}
+.right-part button {
+    padding: 6px;
+    border-radius: 16px;
+    border: none;
+    background-color: white;
+}   
+.right-part button:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-logo{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+.footer-logo span i {
+   margin: 0 0 -90px -20px;
+   color: seagreen;
+}
+.footer-logo span h2 {
+   margin: -20px 0 0 0;
+}
+.footer-nav {
+    display: flex;
+    margin: 10px 0 0 0;
     
-    .hero p{
-      font-size:16px;
-      margin-left:20px;
-    }
+}
+.footer-nav li {
+    list-style: none;
+    margin: 15px 15px 0 15px;
+}
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+}
+.footer-icons a {
+    margin: 20px 15px 0 0;
+}
+.footer-icons a i {
+    color: white;
+    font-size: 24px;
+    padding: 4px;
+}
+.copyright {
+    display: flex;
+    justify-content: space-evenly;
     
-    .smart-cards{
-      flex-direction:column;
-    }
-    
-    .div1,
-    .div4{
-      width:90%;
-    }
-    
-    .div2,
-    .div3{
-      width:90%;
-    }
-    
-    .card-container{
-      grid-auto-columns:80%;
-    }
-    
-    .comment{
-      flex-direction:column;
-      align-items:center;
-    }
-    
-    .comment h5,
-    .comment p,
-    .comment span button{
-      margin:10px;
-    }
-    
-    .img,
-    .img img{
-      width:300px;
-      height:220px;
-    }
-    
-    .heading h2{
-      font-size:26px;
-    }
-    
-    }
-    @media (max-width:480px){
-
-      .logo{
-        margin:10px;
-      }
-      
-      .navbar ul{
-        flex-direction:column;
-        align-items:center;
-      }
-      
-      .nav-links{
-        margin:10px 0;
-      }
-      
-      .btn{
-        margin-bottom:10px;
-      }
-      
-      .hero h1{
-        font-size:20px;
-      }
-      
-      .blog-right p{
-        font-size:18px;
-      }
-      
-      .card-scroll{
-        width:250px;
-      }
-      
-      .card-scroll img{
-        width:250px;
-      }
-      
-      .text-part h2{
-        font-size:26px;
-      }
-      
-      .heading h2{
-        font-size:22px;
-      }
-      
-      .footer{
-        flex-direction:column;
-        text-align:center;
-      }
-      
-      .terms{
-        flex-direction:column;
-        gap:5px;
-        height:auto;
-        padding:10px;
-      }
-      
-      }
+}
+.copyright h6 {
+    margin: 20px 20px 20px 20px;
+}
